@@ -1,0 +1,6 @@
+export const GET_TECHS_REQUEST = '@tech/GET_TECHS_REQUEST';
+export const GET_TECHS_SUCCESS = '@tech/GET_TECHS_SUCCESS';
+export const ADD_TECH_REQUEST = '@tech/ADD_TECH_REQUEST';
+export const ADD_TECH_SUCCESS = '@tech/ADD_TECH_SUCCESS';
+export const DELETE_TECH_REQUEST = '@tech/DELETE_TECH_REQUEST';
+export const DELETE_TECH_SUCCESS = '@tech/DELETE_TECH_SUCCESS';
