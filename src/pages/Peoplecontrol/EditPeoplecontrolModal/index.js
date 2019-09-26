@@ -7,10 +7,10 @@ import { updatePeoplecontrolRequest } from '../../../store/modules/peoplecontrol
 import PeopleListOptions from '../../People/PeopleListOptions';
 import DwellerListOptions from '../../Dweller/DwellerListOptions';
 
-const modalStyle = {
-  width: '75%',
-  height: '75%',
-};
+// const modalStyle = {
+//   width: '75%',
+//   height: '75%',
+// };
 
 export default function EditPeoplecontrolModal() {
   const [people, setPeople] = useState('');
@@ -77,7 +77,7 @@ export default function EditPeoplecontrolModal() {
   }
 
   return (
-    <div id="edit-peoplecontrol-modal" className="modal" style={modalStyle}>
+    <div id="edit-peoplecontrol-modal" className="modal">
       <div className="modal-content">
         <h4>Controle de Pessoas</h4>
         <div className="row">

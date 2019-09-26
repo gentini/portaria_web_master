@@ -48,7 +48,7 @@
   ],
   "dwellers": [
     {
-      "name": "Rodrigo",
+      "name": "Rodrigo1",
       "family": "Luiza",
       "phone": "17 99165-3138",
       "address": "Rua Cláudia Lievana Camargo",
@@ -75,8 +75,19 @@
       "address": "Rua Cláudia Lievana Camargo 5029",
       "city": "Votuporanga",
       "uf": "São Paulo",
-      "peopletype": "Visitante",
+      "peopletype": "Prestador de Serviços",
       "id": 1
+    },
+    {
+      "name": "Fábio",
+      "rg": "99.999.999-9",
+      "cpf": "999.999.999-99",
+      "phone": "17 9 9134-5889",
+      "address": "Rua Alexandre Pereira 638 - Jardim Debortole",
+      "city": "Votuporanga",
+      "uf": "São Paulo",
+      "peopletype": "Visitante",
+      "id": 2
     }
   ],
   "peoplecontrols": [
@@ -87,9 +98,20 @@
       "vehicle": "Moto Honda",
       "plate": "AAA-9999",
       "note": "Entrega de Mercadorias",
-      "exit": false,
-      "date": "2019-09-25T20:21:50.952Z",
+      "exit": true,
+      "date": "2019-09-26T01:45:14.488Z",
       "id": 1
+    },
+    {
+      "people": "Fábio",
+      "dweller": "Rodrigo1 Luiza",
+      "company": "Porecatu",
+      "vehicle": "Caminhão Ford",
+      "plate": "AAA-9999",
+      "note": "Entrega de mercadorias",
+      "exit": false,
+      "date": "2019-09-26T01:44:55.337Z",
+      "id": 2
     }
   ]
 }

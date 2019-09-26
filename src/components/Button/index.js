@@ -4,13 +4,13 @@ export default function Button() {
   return (
     <div className="fixed-action-btn">
       <a
-        href="#add-log-modal"
-        className="btn-floating btn-large green modal-trigger z-depth-3"
+        href="#add-peoplecontrol-modal"
+        className="btn-floating btn-large yellow modal-trigger z-depth-3"
       >
         <i className="large material-icons">add</i>
       </a>
       <ul>
-        <li>
+        {/* <li>
           <a
             href="#tech-list-modal"
             className="btn-floating yellow darken-1 modal-trigger z-depth-3"
@@ -25,7 +25,7 @@ export default function Button() {
           >
             <i className="material-icons">person_add</i>
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             href="#add-dweller-modal"
@@ -79,22 +79,22 @@ export default function Button() {
             <i className="material-icons">list</i>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="#add-peoplecontrol-modal"
             className="btn-floating black modal-trigger z-depth-3"
           >
             <i className="material-icons">person_add</i>
           </a>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <a
             href="#peoplecontrol-list-modal"
             className="btn-floating black modal-trigger z-depth-3"
           >
             <i className="material-icons">list</i>
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

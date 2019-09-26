@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SearchBar from '../../components/SearchBar';
+// import SearchBar from '../../components/SearchBar';
 // import Log from '../Log';
 import AddLogModal from '../Log/AddLogModal';
 import EditLogModal from '../Log/EditLogModal';
@@ -8,6 +8,7 @@ import AddTechModal from '../Tech/AddTechModal';
 import TechListModal from '../Tech/TechListModal';
 import AddDwellerModal from '../Dweller/AddDwellerModal';
 import DwellerListModal from '../Dweller/DwellerListModal';
+import EditDwellerModal from '../Dweller/EditDwellerModal';
 import AddPeopletypeModal from '../Peopletype/AddPeopletypeModal';
 import PeopletypeListModal from '../Peopletype/PeopletypeListModal';
 import AddPeopleModal from '../People/AddPeopleModal';
@@ -23,7 +24,7 @@ import Button from '../../components/Button';
 export default function Dashboard() {
   return (
     <>
-      <SearchBar />
+      {/* <SearchBar /> */}
       <div className="container">
         {/* <Log /> */}
 
@@ -34,6 +35,7 @@ export default function Dashboard() {
 
         <AddDwellerModal />
         <DwellerListModal />
+        <EditDwellerModal />
 
         <AddPeopletypeModal />
         <PeopletypeListModal />

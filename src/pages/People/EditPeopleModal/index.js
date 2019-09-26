@@ -6,10 +6,11 @@ import { updatePeoplesRequest } from '../../../store/modules/people/actions';
 
 import PeopletypeListOptions from '../../Peopletype/PeopletypeListOptions';
 
-const modalStyle = {
-  width: '75%',
-  height: '75%',
-};
+// const modalStyle = {
+//   width: '75%',
+//   height: '75%',
+// };
+// Inserir na <div id="edit-people-modal" className="modal" style={modalStyle}>
 
 export default function EditPeopleModal() {
   const [name, setName] = useState('');
@@ -80,7 +81,7 @@ export default function EditPeopleModal() {
   }
 
   return (
-    <div id="edit-people-modal" className="modal" style={modalStyle}>
+    <div id="edit-people-modal" className="modal">
       <div className="modal-content">
         <h4>Editar Pessoa</h4>
         <div className="row">

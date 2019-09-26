@@ -1,15 +1,16 @@
-# Controle de Chamados
-In inglish: Simple application built with React and its ecosystem that record TI issues and its priority level. (Brazilian Portuguese)
-
-Simples aplicação que registra ocorrências para o setor de TI e seu nível de prioridade para atendimento.
+# Controle de Portaria
+Simples aplicação que registra entrada e saída de pessoas em condomínios.
 
 
 ![Demo](demo.gif)
 
 ## Funcionalidades
-- Adiciona, lista, exclui e filtra ocorrências
-- Seleciona técnico para o atendimento
-- Adiciona nível de prioridade para o atendimento
+- Adiciona, lista e exclui Moradores.
+- Adiciona, lista e exclui Tipo de Pessoas.
+- Adiciona, lista, altera e exclui Pessoas.
+- Adiciona, lista, altera e exclui Controle de Pessoas.
+- Seleciona Tipo de Pessoa para o cadastro de Pessoas.
+- Seleciona Pessoa e Morador para o cadastro de Controle de Pessoas.
 
 
 ## Tecnologias
@@ -23,10 +24,11 @@ Simples aplicação que registra ocorrências para o setor de TI e seu nível de
 ## Executando a aplicação
 ```bash
 # Clone o repositório
-$ git clone https://github.com/marciofrancalima/tech-priority.git (ou use ssh)
+$ git clone https://github.com/gentini/portaria_web_master.git (ou use ssh)
+
 
 # Entre na pasta criada
-$ cd tech-priority
+$ cd portaria_web_master
 
 # Instale as dependências
 $ yarn install (ou npm)
@@ -41,10 +43,9 @@ Aplicação simples, mas na medida que as necessidades vão surgindo, novas impl
 ### Algumas possibilidades:
 
 - Desenvolver a parte de backend com Node.js
-- Adicionar controle de status dos atendimentos
-- Adicionar relatórios gráficos com indicadores úteis de desempenho para auxiliar nas tomadas de decisões
 - Adicionar controle de usuários com autenticação e autorização
 
 ---
 
-Made with ♥ by Márcio França Lima. [Contact me](https://www.linkedin.com/in/m%C3%A1rcio-fran%C3%A7a-lima-916454187/)
+
+Agradecimentos: Márcio França Lima.

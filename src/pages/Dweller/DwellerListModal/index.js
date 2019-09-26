@@ -8,6 +8,7 @@ import DwellerItem from '../DwellerItem';
 import {
   getDwellersRequest,
   deleteDwellersRequest,
+  setCurrentDwellersRequest,
 } from '../../../store/modules/dweller/actions';
 
 export default function DwellerListModal() {
@@ -19,6 +20,10 @@ export default function DwellerListModal() {
   useEffect(() => {
     dispatch(getDwellersRequest());
   }, [dispatch]);
+
+  function handleSelectItem(id) {
+    dispatch(setCurrentDwellersRequest(id));
+  }
 
   function handleDelete(id) {
     dispatch(deleteDwellersRequest(id));
@@ -49,6 +54,7 @@ export default function DwellerListModal() {
                 key={dweller.id}
                 dweller={dweller}
                 onDelete={() => handleDelete(dweller.id)}
+                onSelectItem={() => handleSelectItem(dweller.id)}
               />
             ))}
         </ul>
