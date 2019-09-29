@@ -26,7 +26,6 @@ export default function AddPeoplecontrolModal() {
     setVehicle('');
     setPlate('');
     setNote('');
-    setExit(false);
     setDate('');
   }
 
@@ -172,7 +171,7 @@ export default function AddPeoplecontrolModal() {
                 className="filled-in"
                 defaultChecked={exit}
                 value={exit}
-                onChange={() => setExit(!exit)}
+                onChange={() => setExit(exit)}
               />
               <span>Saída</span>
             </label>

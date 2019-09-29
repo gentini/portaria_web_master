@@ -45,7 +45,6 @@ export default function EditPeoplecontrolModal() {
     setVehicle('');
     setPlate('');
     setNote('');
-    setExit(false);
   }
 
   function handleSubmit() {
@@ -161,18 +160,6 @@ export default function EditPeoplecontrolModal() {
             />
           </div>
         </div>
-
-        {/* <div className="row">
-          <label htmlFor="uf">Data</label>
-          <div className="input-field">
-            <input
-              type="date"
-              name="date"
-              value={date}
-              onChange={e => setDate(e.target.value)}
-            />
-          </div>
-        </div> */}
 
         <div className="row">
           <div className="input-field">

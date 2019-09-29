@@ -17,6 +17,7 @@ const INITIAL_STATE = {
   peoplecontrols: [],
   loading: false,
   error: null,
+  current: null,
 };
 
 export default function peoplecontrol(state = INITIAL_STATE, action) {

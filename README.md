@@ -5,7 +5,7 @@ Simples aplicação que registra entrada e saída de pessoas em condomínios.
 ![Demo](demo.gif)
 
 ## Funcionalidades
-- Adiciona, lista e exclui Moradores.
+- Adiciona, lista, altera e exclui Moradores.
 - Adiciona, lista e exclui Tipo de Pessoas.
 - Adiciona, lista, altera e exclui Pessoas.
 - Adiciona, lista, altera e exclui Controle de Pessoas.
