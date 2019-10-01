@@ -40,13 +40,25 @@ export default function Peoplecontrol() {
         className="collection with-header"
         style={{ paddingBottom: '30px', backgroundColor: '#fff' }}
       >
-        <li className="collection-header">
+        <li
+          className="collection-header"
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}
+        >
           <h4 className="center">Lista de Controle de Pessoas</h4>
-
-          {!loading && peoplecontrolSize === 0 && (
-            <p className="center">Nenhum controle de pessoa listado</p>
-          )}
+          <a
+            href="#add-peoplecontrol-modal"
+            className="btn-floating yellow modal-trigger z-depth-3"
+          >
+            <i className="material-icons left">person_add</i>button
+          </a>
         </li>
+        {!loading && peoplecontrolSize === 0 && (
+          <p className="center">Nenhum controle de pessoa listado</p>
+        )}
 
         {loading && <Preloader />}
 

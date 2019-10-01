@@ -2,7 +2,7 @@
 Simples aplicação que registra entrada e saída de pessoas em condomínios.
 
 
-![Demo](demo.gif)
+![Demo](morador.gif)
 
 ## Funcionalidades
 - Adiciona, lista, altera e exclui Moradores.

@@ -17,8 +17,8 @@ export default function TechListOptions() {
     !loading &&
     dwellerSize !== 0 &&
     dwellers.map(dweller => (
-      <option key={dweller.id} value={`${dweller.name} ${dweller.family}`}>
-        {dweller.name} {dweller.family}
+      <option key={dweller.id} value={`${dweller.name}`}>
+        {dweller.name}
       </option>
     ))
   );

@@ -10,6 +10,13 @@ import AddDwellerModal from '../Dweller/AddDwellerModal';
 import DwellerListModal from '../Dweller/DwellerListModal';
 import EditDwellerModal from '../Dweller/EditDwellerModal';
 
+import AddPeopletypeModal from '../Peopletype/AddPeopletypeModal';
+import PeopletypeListModal from '../Peopletype/PeopletypeListModal';
+
+import AddPeopleModal from '../People/AddPeopleModal';
+import PeopleListModal from '../People/PeopleListModal';
+import EditPeopleModal from '../People/EditPeopleModal';
+
 export default function Dashboard() {
   return (
     <>
@@ -22,6 +29,13 @@ export default function Dashboard() {
       <AddDwellerModal />
       <DwellerListModal />
       <EditDwellerModal />
+
+      <AddPeopletypeModal />
+      <PeopletypeListModal />
+
+      <AddPeopleModal />
+      <PeopleListModal />
+      <EditPeopleModal />
     </>
   );
 }

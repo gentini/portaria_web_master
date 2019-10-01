@@ -10,7 +10,7 @@ export default function PeoplecontrolItem({
 }) {
   const dateFormatted = useMemo(
     () =>
-      format(parseISO(peoplecontrols.date), "dd 'de' MMMM 'às' HH:mm", {
+      format(parseISO(peoplecontrols.date), "dd '/' MM '/' yyyy  'às' HH:mm", {
         locale: ptBR,
       }),
     [peoplecontrols.date]

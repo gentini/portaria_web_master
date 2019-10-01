@@ -6,6 +6,9 @@ import M from 'materialize-css/dist/js/materialize.min';
 import PeopleItem from './PeopleItem';
 import Preloader from '../../components/Preloader';
 
+import AddPeopleModal from './AddPeopleModal';
+import EditPeopleModal from './EditPeopleModal';
+
 import {
   getPeoplesRequest,
   deletePeoplesRequest,
@@ -38,13 +41,25 @@ export default function People() {
         className="collection with-header"
         style={{ paddingBottom: '30px', backgroundColor: '#fff' }}
       >
-        <li className="collection-header">
+        <li
+          className="collection-header"
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}
+        >
           <h4 className="center">Lista de Pessoas</h4>
-
-          {!loading && peopleSize === 0 && (
-            <p className="center">Nenhuma pessoa listada</p>
-          )}
+          <a
+            href="#add-people-modal"
+            className="btn-floating blue modal-trigger"
+          >
+            <i className="material-icons">person_add</i>
+          </a>
         </li>
+        {!loading && peopleSize === 0 && (
+          <p className="center">Nenhuma pessoa listada</p>
+        )}
 
         {loading && <Preloader />}
 
@@ -59,6 +74,8 @@ export default function People() {
             />
           ))}
       </ul>
+      <AddPeopleModal />
+      <EditPeopleModal />
     </>
   );
 }

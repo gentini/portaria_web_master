@@ -26,7 +26,7 @@ export default function Header() {
             <i>
               <img src={logo} alt="Sistema Portaria" width="70px" />
             </i>
-            Sistema Portaria
+            Portaria
           </a>
 
           <ul className="right hide-on-med-and-down">
@@ -34,10 +34,10 @@ export default function Header() {
               <a href="/">Controle de Pessoas</a>
             </li>
             <li>
-              <a href="/dweller">Pessoas</a>
+              <a href="/people">Pessoas</a>
             </li>
             <li>
-              <a href="/dweller">Tipo de Pessoas</a>
+              <a href="/peopletype">Tipo de Pessoas</a>
             </li>
             <li>
               <a href="/dweller">Moradores</a>

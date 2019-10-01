@@ -6,7 +6,6 @@ import M from 'materialize-css/dist/js/materialize.min';
 import DwellerItem from './DwellerItem';
 import Preloader from '../../components/Preloader';
 
-import Button from '../../components/Button';
 import AddDwellerModal from './AddDwellerModal';
 // import DwellerListModal from './DwellerListModal';
 import EditDwellerModal from './EditDwellerModal';
@@ -41,23 +40,30 @@ export default function Dweller() {
     <>
       <ul
         className="collection with-header"
-        style={{ paddingBottom: '30px', backgroundColor: '#fff' }}
+        style={{
+          paddingBottom: '30px',
+          backgroundColor: '#fff',
+        }}
       >
-        <li className="collection-header">
-          <h4 className="center">
-            Lista de Moradores
-            <a
-              href="#add-dweller-modal"
-              className="btn-floating red modal-trigger z-depth-3"
-            >
-              <i className="material-icons left">person_add</i>button
-            </a>
-          </h4>
-
-          {!loading && dwellerSize === 0 && (
-            <p className="center">Nenhum morador listado</p>
-          )}
+        <li
+          className="collection-header"
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}
+        >
+          <h4>Lista de Moradores</h4>
+          <a
+            href="#add-dweller-modal"
+            className="btn-floating red modal-trigger"
+          >
+            <i className="material-icons">person_add</i>
+          </a>
         </li>
+        {!loading && dwellerSize === 0 && (
+          <p className="center">Nenhum morador listado</p>
+        )}
 
         {loading && <Preloader />}
 
@@ -72,7 +78,6 @@ export default function Dweller() {
             />
           ))}
       </ul>
-      <Button />
       <EditDwellerModal />
       <AddDwellerModal />
     </>
